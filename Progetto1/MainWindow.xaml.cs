@@ -24,5 +24,14 @@ namespace Progetto1
         {
             InitializeComponent();
         }
+
+        private void btnCreaBrano_Click(object sender, RoutedEventArgs e)
+        {
+            string autore = txtAutore.Text;
+            string titolo = txtTitolo.Text;
+            string durata = txtDurata.Text;
+            Add.lblBrani.Content = "Autore: " + autore + "\nTitolo: " + titolo + "\nDurata: " + durata;
+        }
+
     }
 }
